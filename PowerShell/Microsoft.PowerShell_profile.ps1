@@ -15,20 +15,11 @@ Set-Alias -Name vs19 -Value "C:\Program Files (x86)\Microsoft Visual Studio\2019
 Set-Alias -Name vs22 -Value "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\devenv.exe"
 Set-Alias -Name ssms -Value "C:\Program Files (x86)\Microsoft SQL Server Management Studio 18\Common7\IDE\Ssms.exe"
 
-# Comment this out to show aliases (Ctrl + K + U):
-# alias add
-# alias tm
-# alias vs
-# alias np
-# alias word
-# alias s
-# alias vbox
-# alias iis
-# alias vs19
-# alias vs22
-# alias ssms
+# ---
+# This Profile was created by Scott Hanselman (https://www.hanselman.com/blog/my-ultimate-powershell-prompt-with-oh-my-posh-and-the-windows-terminal)
+# ---
 
-# Completes arguments when you type tab
+# Auto-Fill arguments
 Register-ArgumentCompleter -Native -CommandName winget -ScriptBlock {
     param($wordToComplete, $commandAst, $cursorPosition)
         [Console]::InputEncoding = [Console]::OutputEncoding = $OutputEncoding = [System.Text.Utf8Encoding]::new()
@@ -39,21 +30,13 @@ Register-ArgumentCompleter -Native -CommandName winget -ScriptBlock {
         }
 }
 
-# PowerShell parameter completion shim for the dotnet CLI
+# Parameter completion
 Register-ArgumentCompleter -Native -CommandName dotnet -ScriptBlock {
      param($commandName, $wordToComplete, $cursorPosition)
          dotnet complete --position $cursorPosition "$wordToComplete" | ForEach-Object {
             [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterValue', $_)
          }
  }
-
-# ---
-
-
-# This is an example profile for PSReadLine.
-#
-# This is roughly what I use so there is some emphasis on emacs bindings,
-# but most of these bindings make sense in Windows mode as well.
 
 # Searching for commands with up/down arrow is really handy.  The
 # option "moves to end" is useful if you want the cursor at the end
