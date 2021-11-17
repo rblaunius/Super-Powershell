@@ -3,6 +3,7 @@ oh-my-posh --init --shell pwsh --config "C:\Users\Barrett Launius\OneDrive - Fou
 Import-Module -Name Terminal-Icons
 
 # Aliases
+Set-Alias -Name c -Value Set-Clipboard
 Set-Alias -Name add -Value New-Item
 Set-Alias -Name tm -Value Taskmgr.exe
 Set-Alias -Name vs -Value code
@@ -15,6 +16,48 @@ Set-Alias -Name vs19 -Value "C:\Program Files (x86)\Microsoft Visual Studio\2019
 Set-Alias -Name vs22 -Value "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\devenv.exe"
 Set-Alias -Name ssms -Value "C:\Program Files (x86)\Microsoft SQL Server Management Studio 18\Common7\IDE\Ssms.exe"
 Set-Alias -Name logi -Value "C:\ProgramData\Logishrd\LogiOptions\Software\Current\LogiOptionsUI.exe"
+
+# Copies current dir to clipboard
+function copyme {
+    Set-Clipboard $PWD
+    Write-Host "Copied to clipboard: '$PWD'"    
+}
+Set-Alias cm -Value copyme
+
+# Open Settings
+function settings {
+    start ms-settings:
+}
+Set-Alias ss -Value settings
+
+# Show Custom Aliases
+function show-custom {
+     Alias c
+     Alias add
+     Alias tm
+     Alias vs
+     Alias np
+     Alias word
+     Alias s
+     Alias vbox
+     Alias iis
+     Alias vs19
+     Alias vs22
+     Alias ssms
+     Alias logi
+     Alias cm
+     Write-Host "                  Copies current directory to clipboard"
+     Alias ss
+     Write-Host "                  Opens windows settings"
+}
+
+# Startup
+# $showStartup = $true
+# if ($showStartup) {
+#     Write-Host "Custom Aliases:"
+#     show-custom    
+#     $showStartup = $false
+# }
 
 # ---
 # This Profile was created by Scott Hanselman (https://www.hanselman.com/blog/my-ultimate-powershell-prompt-with-oh-my-posh-and-the-windows-terminal)
