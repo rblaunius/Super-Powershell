@@ -14,6 +14,7 @@ Set-Alias -Name iis -Value "C:\Windows\System32\inetsrv\InetMgr.exe"
 Set-Alias -Name vs19 -Value "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe"
 Set-Alias -Name vs22 -Value "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\devenv.exe"
 Set-Alias -Name ssms -Value "C:\Program Files (x86)\Microsoft SQL Server Management Studio 18\Common7\IDE\Ssms.exe"
+Set-Alias -Name logi -Value "C:\ProgramData\Logishrd\LogiOptions\Software\Current\LogiOptionsUI.exe"
 
 # ---
 # This Profile was created by Scott Hanselman (https://www.hanselman.com/blog/my-ultimate-powershell-prompt-with-oh-my-posh-and-the-windows-terminal)
