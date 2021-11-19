@@ -14,8 +14,8 @@
                     "style": "diamond",
                     "powerline_symbol": "",
                     "invert_powerline": false,
-                    "foreground": "#ffffff",
-                    "background": "#ff479c",
+                    "foreground": "000000",//"#ffffff",
+                    "background": "#ffffff", //"#ff479c",
                     "leading_diamond": "",
                     "trailing_diamond": "",
                     "properties": {
