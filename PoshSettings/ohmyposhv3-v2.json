@@ -14,8 +14,8 @@
                     "style": "diamond",
                     "powerline_symbol": "",
                     "invert_powerline": false,
-                    "foreground": "000000",//"#ffffff",
-                    "background": "#ffffff", //"#ff479c",
+                    "foreground": "193549",
+                    "background": "#e1e1e1",
                     "leading_diamond": "",
                     "trailing_diamond": "",
                     "properties": {
@@ -29,7 +29,7 @@
                     "powerline_symbol": "",
                     "invert_powerline": false,
                     "foreground": "#193549",
-                    "background": "#fffb38",
+                    "background": "#ebee3a",
                     "leading_diamond": "",
                     "trailing_diamond": "",
                     "properties": {
@@ -62,6 +62,18 @@
                     "leading_diamond": "",
                     "trailing_diamond": "",
                     "properties": null
+                },
+                {
+                    "type": "executiontime",
+                    "style": "powerline",
+                    "powerline_symbol": "",
+                    "foreground": "#ffffff",
+                    "background": "#8800dd",
+                    "properties": {
+                      "threshold": 25,
+                      "style": "austin",
+                      "prefix": "  "
+                    }
                 },
                 {
                     "type": "exit",
