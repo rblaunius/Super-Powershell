@@ -1,5 +1,5 @@
 # OhMyPosh
-oh-my-posh --init --shell pwsh --config "C:\Users\Barrett Launius\OneDrive - Fourlane\Documents\PowerShell\PoshSettings\ohmyposhv3-v2.json" | Invoke-Expression
+oh-my-posh --init --shell pwsh --config "C:\Users\rblau\OneDrive\Documents\PowerShell\PoshSettings\ohmyposhv3-v2.json" | Invoke-Expression
 Import-Module -Name Terminal-Icons
 
 # Aliases

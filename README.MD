@@ -1,6 +1,6 @@
 # PowerShell Super Config (Windows 11)
 
-![Example](https://i.imgur.com/P0RDJzg.png)
+![Example](https://i.imgur.com/GAbCVUU.png)
 
 1. Make sure the .NET Core version of PowerShell is installed (find in Microsoft Store). Once installed, open it in Terminal 
 
