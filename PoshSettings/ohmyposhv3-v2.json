@@ -70,7 +70,7 @@
                     "foreground": "#ffffff",
                     "background": "#8800dd",
                     "properties": {
-                      "threshold": 25,
+                      "threshold": 200,
                       "style": "austin",
                       "prefix": "  "
                     }
