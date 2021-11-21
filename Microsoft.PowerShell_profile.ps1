@@ -16,6 +16,8 @@ Set-Alias -Name vs19 -Value "C:\Program Files (x86)\Microsoft Visual Studio\2019
 Set-Alias -Name vs22 -Value "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\devenv.exe"
 Set-Alias -Name ssms -Value "C:\Program Files (x86)\Microsoft SQL Server Management Studio 18\Common7\IDE\Ssms.exe"
 Set-Alias -Name logi -Value "C:\ProgramData\Logishrd\LogiOptions\Software\Current\LogiOptionsUI.exe"
+Set-Alias -Name chrome -Value "C:\Program Files\Google\Chrome\Application\chrome.exe"
+Set-Alias -Name goog -Value chrome
 
 # Copies current dir to clipboard
 function copyme {
