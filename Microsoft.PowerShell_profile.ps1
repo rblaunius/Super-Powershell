@@ -18,6 +18,7 @@ Set-Alias -Name ssms -Value "C:\Program Files (x86)\Microsoft SQL Server Managem
 Set-Alias -Name logi -Value "C:\ProgramData\Logishrd\LogiOptions\Software\Current\LogiOptionsUI.exe"
 Set-Alias -Name chrome -Value "C:\Program Files\Google\Chrome\Application\chrome.exe"
 Set-Alias -Name goog -Value chrome
+Set-Alias -Name ptoy -Value "C:\Program Files\PowerToys\PowerToys.exe"
 
 # Copies current dir to clipboard
 function copyme {
